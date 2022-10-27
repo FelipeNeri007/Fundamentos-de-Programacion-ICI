@@ -241,4 +241,3 @@ class Persona {
     print("$aPaterno $aMaterno $nombre");
   }
 }
- */
