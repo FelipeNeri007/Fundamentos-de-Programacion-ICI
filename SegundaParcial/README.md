@@ -230,7 +230,7 @@ void showVehiculo(vehiculo miCarro) {
    vehiculo miVehiculo = new vehiculo(4, 'Negro', 'Chevrolet', '2022');
   // vehiculo miVehiculo = new vehiculo(4, 'Blanco', 'BMW', 'Suzuki');
   print('');
-  miJeep.imprimircaracteristicas();
+  miVehiculo.imprimircaracteristicas();
   print('');
   // showVehiculo(miJetta);
 }
