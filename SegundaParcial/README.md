@@ -161,9 +161,9 @@ class Persona {
  ```
 #### 3:Salida
 ```
-Gonzalez Martionez Felipe
+Gonzalez Martinez Felipe
 Tienes 19 años
-Gonzalez Martionez Felipe
+Gonzalez Martinez Felipe
 ```
 
 ### Ejercicio 1.5. Simulacro de examen practico
