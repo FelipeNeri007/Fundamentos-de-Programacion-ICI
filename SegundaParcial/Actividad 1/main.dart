@@ -213,7 +213,7 @@ class Calculadora {
 //   }
 // }
 
-/* void main(List<String> args) {
+  void main(List<String> args) {
   Persona cristian = new Persona();
   neri.aMaterno = "Martinez";
   neri.aPaterno = "Gonzalez";
@@ -241,4 +241,3 @@ class Persona {
     print("$aPaterno $aMaterno $nombre");
   }
 }
-*/
