@@ -23,3 +23,12 @@ defmodule Calculadora do
  def multiplicación(n1,n2), do: n1*n2
  def división(n1,n2), do: n1/n2
 end
+```
+## Calculadora Distribuida
+```.ex
+defmodule DistCalculator do
+ def suma(n1,n2) do
+ IO.puts(n1+n2)
+ end
+end
+```
