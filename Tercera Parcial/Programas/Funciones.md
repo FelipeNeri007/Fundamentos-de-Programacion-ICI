@@ -87,3 +87,65 @@ iex> c("modulo01.ex")
 este es un mensaje publico
 este es un mensaje privado
 [TestPublicoPrivado]
+```
+### • Funciones:
+```.ex
+defmodule Calculadora do
+def div(_,0) do
+{:error, "No se puede dividir por 0"}
+end
+def div(n1, n2) do
+{:ok, "El resultado es: #{n1/n2}"}
+end
+end
+IO.inspect(Calculadora.div(5,0))
+IO.inspect(Calculadora.div(5,3))
+```
+### Salida:
+```.ex
+>elixir main.ex
+{:error, "No se puede dividir por 0"}
+{:ok, "El resultado es: 1.6666666666666667"}
+```
+### • Si invertimos el orden de las funciones, es decir:
+```.ex
+defmodule Calculadora do
+def div(n1, n2) do
+{:ok, "El resultado es: #{n1/n2}"}
+end
+def div(_,0) do
+{:error, "No se puede dividir por 0"}
+end
+end
+IO.inspect(Calculadora.div(5,0))
+IO.inspect(Calculadora.div(5,3))
+```
+### Salida:
+```.ex
+>elixir main.ex
+warning: this clause for div/2 cannot match because a previous clause at
+line 2 always matches
+main.ex:5
+** (ArithmeticError) bad argument in arithmetic expression
+main.ex:3: Calculadora.div/2
+main.ex:10: (file)
+(elixir 1.10.4) lib/code.ex:926: Code.require_file/2
+```
+### Guardas:
+```.ex
+defmodule Numero do
+def cero?(0), do: true
+def cero?(n) when is_integer(n), do: false
+def cero?(_), do: "No es entero"
+end
+IO.puts(Numero.cero?(0))
+IO.puts(Numero.cero?(2))
+IO.puts(Numero.cero?("3"))
+```
+### Salida:
+```.ex
+>elixir main.ex
+true
+false
+```
+No es entero
