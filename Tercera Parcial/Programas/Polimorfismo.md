@@ -52,6 +52,7 @@ end
 ```
 ### • Este módulo genera dos funciones como en el caso anterior
 ````
+````
 ### Salida
 ```.ex
 iex()> c("modulo01.ex")
